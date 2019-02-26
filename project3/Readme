@@ -1,0 +1,21 @@
+Abstract
+Purchasing history from customer is an important asset for eCommerce company.  By studying the purchasing relationship, we could identify some customer's interests by similar purchases.
+ 
+Data
+We used Amazon products sold records in 2006 summer. There are three types of products: books, DVDs, Music CDs and Videos. In the dataset, each product title, sales rank, list of similar products, category and product review including individual rating from users.  By using the co-purchasing data and item data (Amazon-meta), we can perform network analysis.
+ 
+There are 548,552 nodes and 1,788,725 edges in the data.
+
+https://snap.stanford.edu/data/amazon-meta.html - Amazon product metadata and reviews from summer 2006
+
+https://snap.stanford.edu/data/amazon0601.html - Amazon product co-purchaisng network from June 01 2003
+
+Filter Data
+We will filter data by top 100 most reviewed products instead of the entire dataset (see the jypter notebook for the step by step process).
+
+The python code in the jypter notebook is designed to process the raw files that can be found from link above.  And the output are csv file:
+
+top100_edges.csv - edge file for top 100 most reviewed product
+top100_nodes.csv - node file for the top 100 most review edge file
+
+
